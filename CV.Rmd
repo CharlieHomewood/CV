@@ -1,0 +1,95 @@
+---
+title: "**\\vspace{-0.25cm} \\Huge Charlie Homewood**"
+address: "9 Bernard Road, Brighton, BN2 3ER"
+aboutsection: 
+  "Recent BSc Psychology with Economics graduate with a strong background in data analysis, research skills and scientific methodology gained from educational and work experiences. I am passionate to utilise the skills I have developed to provide insights into important questions"
+email: "charliehomewood99@gmail.com"
+github: "\\href{https://github.com/CharlieHomewood}{Github}"
+languages: "R, Python"
+linkedin: "\\href{https://www.linkedin.com/in/charliehomewood/}{Linkedin}"
+mobile: "07307233382"
+website: "\\href{https://charliehomewood.github.io/website/}{Website}"
+
+header-includes:
+ - \usepackage{geometry}
+ - \usepackage{soul}
+ - \usepackage{xcolor}
+ - \usepackage{ragged2e}
+ - \usepackage{tikz}
+ - \usepackage{graphicx}
+ - \usepackage{titling}
+ - \setlength{\droptitle}{-2em}  
+ - \geometry{margin = 0.2in}
+output: 
+  pdf_document:
+    latex_engine: xelatex
+linkcolor: blue
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+\definecolor{pagecolor}{HTML}{d7f7f7}
+\pagecolor{pagecolor}
+
+\begin{minipage}[c]{0.5\textwidth}
+\vspace{0.1cm}
+\hspace{0.5cm}
+\begin{tikzpicture}
+\clip (0,0)  circle (2cm) ;
+\node[anchor=center] at (0,0) {\includegraphics[width=0.4\textwidth]{./img/me.jpg}};
+\end{tikzpicture}
+\end{minipage}
+\begin{minipage}[c]{0.5\textwidth}
+\vspace{0.1cm}
+\raggedleft \large Address: `r rmarkdown::metadata$address`
+
+\raggedleft \large Email: `r rmarkdown::metadata$email`
+
+\raggedleft \large Mobile: `r rmarkdown::metadata$mobile`
+
+\raggedleft \large `r rmarkdown::metadata$github` \texttt{|} \large `r rmarkdown::metadata$linkedin` \texttt{|} \large `r rmarkdown::metadata$website`
+\end{minipage}
+
+\
+
+`r rmarkdown::metadata$aboutsection`
+
+# \LARGE ------ Education ------
+\vspace{0.25cm}
+\begin{minipage}[t]{0.4\textwidth}
+  \Large\textbf{BSc Psychology with Economics}\\
+  \raggedleft \large \textit{2019-2023}\\
+  \raggedleft \large \textit{University of Sussex}\\
+  \raggedleft \large \textit{\textbf{Grade: 1st class (Hons)}}\\
+\end{minipage}
+\begin{minipage}[t]{1\textwidth\hspace{1cm}}
+  \large\textbf{\textit{Relevant Modules}}\\
+  \tiny \\
+  \begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \normalsize \item \textbf{Research Dissertation} 
+      \begin{itemize}
+        \normalsize \item \href{https://psyarxiv.com/6d5nq/}{\ul{Conducted computational reproductions of analyses \\ published in peer-reviewed journal articles}}
+      \end{itemize}
+    \vspace{0.25cm}
+    \normalsize \item \textbf{Quantitative and Qualitative Methods}
+      \begin{itemize}
+        \normalsize \item \href{https://github.com/CharlieHomewood/QQM-EFA}{\ul{Conducted an exploratory Factor Analysis on \\ questionnaire data I collected}}
+      \end{itemize}
+    \vspace{0.25cm}
+    \normalsize \item \textbf{Perspectives in Psychology}
+      \begin{itemize}
+        \item Developed a solid understanding of broader scientific \\ issues such a replication/reproducibility, research \\ ethics and philosophy of science.
+      \end{itemize}
+    \vspace{0.25cm}
+    \normalsize \item \textbf{Behavioural Economics}
+      \begin{itemize}
+        \item Developed a strong understanding of cognitive biases \\ in real-world economic behaviour.
+      \end{itemize}
+  \end{itemize}
+\end{minipage}
+
+
