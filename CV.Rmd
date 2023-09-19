@@ -68,6 +68,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 \vspace{0.25cm}
 \begin{minipage}[t]{0.3\textwidth}
   \raggedleft \Large \textbf{BSc Psychology with Economics}\\
+  \vspace{0.1cm}
   \raggedleft \large \textit{2019-2023}\\
   \raggedleft \large \textit{University of Sussex}\\
   \raggedleft \large \textit{\textbf{Grade: 1st class (Hons)}}\\
@@ -113,6 +114,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 \vspace{0.25cm}
 \begin{minipage}[t]{0.3\textwidth}
   \raggedleft \Large \textbf{\href{https://datacove.co.uk/}{\ul{Datacove}}}\\
+  \vspace{0.1cm}
   \raggedleft \large \textit{\textbf{Data Analyst Intern}}\\
   \raggedleft \large \textit{July-September 2023}\\
 \end{minipage}
@@ -132,6 +134,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 \vspace{1cm}
 \begin{minipage}[t]{0.3\textwidth}
   \raggedleft \Large \textbf{\href{https://themindlab.co.uk/}{\ul{Mindlab}}}\\
+  \vspace{0.1cm}
   \raggedleft \large \textit{\textbf{Project Manager (Intern)}}\\
   \raggedleft \large \textit{July-September 2023}\\
 \end{minipage}
@@ -145,6 +148,24 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
     \large \item \textbf{\href{https://themindlab.co.uk/case-study/finding-the-ideal-customer/}{\ul{Produced a summary report}}} of a project that developed \\ a segmentation method to gain insight into consumer \\ characteristics. 
     \vspace{0.2cm}
     \large \item Helped Mindlab to \textbf{explore the viability of incorporating \\ 'Social Listening'} into Mindlab's series of measurement tools. \\ \href{https://themindlab.co.uk/how/social-listening/}{\ul{This tool is now part of Mindlab's commerical portfolio.}}
+  \end{itemize}
+\end{minipage}
+
+\vspace{1cm}
+\begin{minipage}[t]{0.3\textwidth}
+  \raggedleft \Large \textbf{University of Sussex Library}\\
+  \vspace{0.1cm}
+  \raggedleft \large \textit{\textbf{Library Cleaner}}\\
+  \raggedleft \large \textit{June-July 2018, June-July 2019, June-July 2021}\\
+\end{minipage}
+\begin{minipage}[t]{1\textwidth\hspace{1cm}}
+  \Large \textbf{\textit{Responsibilities}}\\
+  \vspace{-0.625cm}
+  \begin{itemize}
+    \vspace{0.2cm}
+    \large \item Cleaned books, bookshelves and equipment, sorted books, \\ disposed of outdated items.
+    \vspace{0.2cm}
+    \large \item Worked both independently and in small teams to consistently \\ meet daily targets.
   \end{itemize}
 \end{minipage}
 
