@@ -1,14 +1,14 @@
 ---
-title: "**\\vspace{-0.25cm} \\Huge Charlie Homewood**"
+title: "**\\vspace{-0.25cm} \\fontsize{42}{60}\\selectfont Charlie Homewood**"
 address: "9 Bernard Road, Brighton, BN2 3ER"
 aboutsection: 
-  "Recent BSc Psychology with Economics graduate with a strong background in data analysis, research skills and scientific methodology gained from educational and work experiences. I am passionate to utilise the skills I have developed to provide insights into important questions"
+  "Recent BSc Psychology with Economics graduate with a strong background in data analysis, research skills and scientific methodology gained from educational and work experiences. I am skilled in using R (programming language) to conduct a variety of analytical techniques. I am passionate to utilise the skills I have developed to provide valuable insights into important questions. \\textbf{Currently seeking to gain experience in data analysis or data science roles.}"
 email: "charliehomewood99@gmail.com"
-github: "\\href{https://github.com/CharlieHomewood}{Github}"
-languages: "R, Python"
-linkedin: "\\href{https://www.linkedin.com/in/charliehomewood/}{Linkedin}"
+github: "\\href{https://github.com/CharlieHomewood}{\\faGithub \\ Github}"
+linkedin: "\\href{https://www.linkedin.com/in/charliehomewood/}{\\faLinkedin \\ Linkedin}"
 mobile: "07307233382"
-website: "\\href{https://charliehomewood.github.io/website/}{Website}"
+skills: "\\flushright R (Proficient) \\\\ Python (Basic) \\\\ SQL (Basic)"
+website: "\\href{https://charliehomewood.github.io/website/}{\\faServer \\ Website}"
 
 header-includes:
  - \usepackage{geometry}
@@ -16,6 +16,7 @@ header-includes:
  - \usepackage{xcolor}
  - \usepackage{ragged2e}
  - \usepackage{tikz}
+ - \usepackage{fontawesome}
  - \usepackage{graphicx}
  - \usepackage{titling}
  - \setlength{\droptitle}{-2em}  
@@ -31,9 +32,6 @@ library(knitr)
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
-\definecolor{pagecolor}{HTML}{d7f7f7}
-\pagecolor{pagecolor}
-
 \begin{minipage}[c]{0.5\textwidth}
 \vspace{0.1cm}
 \hspace{0.5cm}
@@ -44,52 +42,148 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 \end{minipage}
 \begin{minipage}[c]{0.5\textwidth}
 \vspace{0.1cm}
-\raggedleft \large Address: `r rmarkdown::metadata$address`
+\raggedleft \large \faMapMarker \ `r rmarkdown::metadata$address`
 
-\raggedleft \large Email: `r rmarkdown::metadata$email`
+\raggedleft \large \faEnvelope \ `r rmarkdown::metadata$email`
 
-\raggedleft \large Mobile: `r rmarkdown::metadata$mobile`
+\raggedleft \large \faMobile \ `r rmarkdown::metadata$mobile`
 
 \raggedleft \large `r rmarkdown::metadata$github` \texttt{|} \large `r rmarkdown::metadata$linkedin` \texttt{|} \large `r rmarkdown::metadata$website`
 \end{minipage}
 
 \
 
-`r rmarkdown::metadata$aboutsection`
-
-# \LARGE ------ Education ------
+\begin{minipage}[t]{0.7\textwidth}
+\LARGE \textbf{Summary}
 \vspace{0.25cm}
-\begin{minipage}[t]{0.4\textwidth}
-  \Large\textbf{BSc Psychology with Economics}\\
+\begin{flushleft} \large `r rmarkdown::metadata$aboutsection` \end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.2\textwidth\hspace{1cm}}
+\flushright \LARGE \textbf{Skills}\vspace{0.25cm}
+\large `r rmarkdown::metadata$skills`
+\end{minipage}
+
+\vspace{1cm}
+\LARGE \textbf{------ \faUniversity \ Education ------}
+\vspace{0.25cm}
+\begin{minipage}[t]{0.3\textwidth}
+  \raggedleft \Large \textbf{BSc Psychology with Economics}\\
   \raggedleft \large \textit{2019-2023}\\
   \raggedleft \large \textit{University of Sussex}\\
   \raggedleft \large \textit{\textbf{Grade: 1st class (Hons)}}\\
 \end{minipage}
 \begin{minipage}[t]{1\textwidth\hspace{1cm}}
-  \large\textbf{\textit{Relevant Modules}}\\
-  \tiny \\
+  \Large \textbf{\textit{Relevant Modules}}\\
+  \vspace{-0.4cm}
   \begin{itemize}
-    \setlength{\itemsep}{0pt}
-    \normalsize \item \textbf{Research Dissertation} 
+    \large \item \textbf{Research Dissertation} 
       \begin{itemize}
-        \normalsize \item \href{https://psyarxiv.com/6d5nq/}{\ul{Conducted computational reproductions of analyses \\ published in peer-reviewed journal articles}}
+        \large \item \href{https://psyarxiv.com/6d5nq/}{\textbf{\ul{Conducted computational reproductions of \\ analyses published in peer-reviewed journal articles.}}}
       \end{itemize}
-    \vspace{0.25cm}
-    \normalsize \item \textbf{Quantitative and Qualitative Methods}
+    \vspace{0.2cm}
+    \large \item \textbf{Quantitative and Qualitative Methods}
       \begin{itemize}
-        \normalsize \item \href{https://github.com/CharlieHomewood/QQM-EFA}{\ul{Conducted an exploratory Factor Analysis on \\ questionnaire data I collected}}
+        \large \item \href{https://github.com/CharlieHomewood/QQM-EFA}{\textbf{\ul{Conducted an exploratory factor analysis on \\ questionnaire data I collected.}}}
       \end{itemize}
-    \vspace{0.25cm}
-    \normalsize \item \textbf{Perspectives in Psychology}
+    \vspace{0.2cm}
+    \large \item \textbf{Perspectives in Psychology}
       \begin{itemize}
-        \item Developed a solid understanding of broader scientific \\ issues such a replication/reproducibility, research \\ ethics and philosophy of science.
+        \item Developed a solid understanding of broader scientific \\ issues such as replication/reproducibility, research ethics \\ and philosophy of science.
       \end{itemize}
-    \vspace{0.25cm}
-    \normalsize \item \textbf{Behavioural Economics}
+    \vspace{0.2cm}
+    \large \item \textbf{Behavioural Economics}
       \begin{itemize}
-        \item Developed a strong understanding of cognitive biases \\ in real-world economic behaviour.
+        \item Developed a strong understanding of cognitive biases in \\ real-world economic behaviour.
+      \end{itemize}
+  \end{itemize}
+  \vspace{0.25cm}
+  \Large \textbf{\textit{Awards}}\\
+  \vspace{-0.4cm}
+  \begin{itemize}
+    \large \item The Sage Publications Prize for Outstanding Application of \\ Statistical Methods (2023).
+      \begin{itemize}
+        \large \item \textit{"To be awarded for the highest mark for a project that a \\ supervisor has nominated based on outstanding application \\ of statistical methods."}
       \end{itemize}
   \end{itemize}
 \end{minipage}
+
+\newpage
+\
+\LARGE \textbf{------ \faLightbulbO \ Work Experience ------}
+\vspace{0.25cm}
+\begin{minipage}[t]{0.3\textwidth}
+  \raggedleft \Large \textbf{\href{https://datacove.co.uk/}{\ul{Datacove}}}\\
+  \raggedleft \large \textit{\textbf{Data Analyst Intern}}\\
+  \raggedleft \large \textit{July-September 2023}\\
+\end{minipage}
+\begin{minipage}[t]{1\textwidth\hspace{1cm}}
+  \Large \textbf{\textit{Achievements}}\\
+  \vspace{-0.625cm}
+  \begin{itemize}
+    \vspace{0.2cm}
+    \large \item \textbf{Created a training course on conducting logistic \\ regressions in R} to be offered as part of Datacove's portfolio \\ of commercial training courses.
+    \vspace{0.2cm}
+    \large \item \textbf{Wireframed an analysis dashboard (MS PowerPoint \\ and \href{https://www.elastic.co/kibana}{\ul{Kibana}})} for a client to help them identify and resolve \\ security vulnerabilities in websites in the UK.
+    \vspace{0.2cm}
+    \large \item \textbf{Optimised media mix models in R} to support clients in \\ understanding how various contributing variables relate to \\ their KPIs, allowing them to make evidence-based decisions in \\ their marketing strategies.
+  \end{itemize}
+\end{minipage}
+
+\vspace{1cm}
+\begin{minipage}[t]{0.3\textwidth}
+  \raggedleft \Large \textbf{\href{https://themindlab.co.uk/}{\ul{Mindlab}}}\\
+  \raggedleft \large \textit{\textbf{Project Manager (Intern)}}\\
+  \raggedleft \large \textit{July-September 2023}\\
+\end{minipage}
+\begin{minipage}[t]{1\textwidth\hspace{1cm}}
+  \Large \textbf{\textit{Achievements}}\\
+  \vspace{-0.625cm}
+  \begin{itemize}
+    \vspace{0.2cm}
+    \large \item \textbf{Designed and produced experimental stimuli} for the \\ pilot phase of an internal research experiment seeking to \\ validate and improve \href{https://themindlab.co.uk/how/measuring-visual-attention/#:~:text=elements%20between%20trials.-,Findability,-To%20assess%20how}{\ul{Mindlab's 'Findability' measurement tool}}.
+    \vspace{0.2cm}
+    \large \item \textbf{\href{https://themindlab.co.uk/case-study/finding-the-ideal-customer/}{\ul{Produced a summary report}}} of a project that developed \\ a segmentation method to gain insight into consumer \\ characteristics. 
+    \vspace{0.2cm}
+    \large \item Helped Mindlab to \textbf{explore the viability of incorporating \\ 'Social Listening'} into Mindlab's series of measurement tools. \\ \href{https://themindlab.co.uk/how/social-listening/}{\ul{This tool is now part of Mindlab's commerical portfolio.}}
+  \end{itemize}
+\end{minipage}
+
+\vspace{1cm}
+\LARGE \textbf{------ \faCalendar \ Personal Projects ------}
+\vspace{0.25cm}
+\begin{minipage}[t]{0.3\textwidth}
+\raggedleft \Large \textbf{\href{https://charliehomewood.github.io/website/projects/project1}{\ul{Making Percentile Radars}}}\\
+\raggedleft \large \textit{Ongoing}\\
+\end{minipage}
+\begin{minipage}[t]{1\textwidth\hspace{1cm}}
+\large Using data from fbref, I'm creating an \href{https://github.com/CharlieHomewood/making-percentile-radars}{\textbf{\ul{analysis dashboard \\ using the Shiny package in R}}} to visualise the performance of \\ male footballers across Europe's top 5 highest ranked divisions.
+\end{minipage}
+
+\vspace{0.5cm}
+\begin{minipage}[t]{0.3\textwidth}
+\raggedleft \Large \href{https://charliehomewood.github.io/website/projects/project2}{\textbf{\ul{F1 Machine Learning}}}\\
+\raggedleft \large \textit{Ongoing}\\
+\end{minipage}
+\begin{minipage}[t]{1\textwidth\hspace{1cm}}
+\large Working with the \textbf{Ergast F1 API in Python}, I'm exploring the \\ impact of major regulation changes on the performance of drivers \\ and constructor teams between 1958 to now. 
+\end{minipage}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
