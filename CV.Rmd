@@ -1,29 +1,32 @@
 ---
 title: "**\\vspace{-0.25cm} \\fontsize{42}{60}\\selectfont Charlie Homewood**"
-address: "9 Bernard Road, Brighton, BN2 3ER"
-aboutsection: 
-  "Recent BSc Psychology with Economics graduate with a strong background in data analysis, research skills and scientific methodology gained from educational and work experiences. I am skilled in using R (programming language) to conduct a variety of analytical techniques. I am passionate to utilise the skills I have developed to provide valuable insights into important questions. \\textbf{Currently seeking to gain experience in data analysis or data science roles.}"
-email: "charliehomewood99@gmail.com"
-github: "\\href{https://github.com/CharlieHomewood}{\\faGithub \\ Github}"
-linkedin: "\\href{https://www.linkedin.com/in/charliehomewood/}{\\faLinkedin \\ Linkedin}"
-mobile: "07307233382"
-skills: "\\flushright R (Proficient) \\\\ Python (Basic) \\\\ SQL (Basic)"
-website: "\\href{https://charliehomewood.github.io/website/}{\\faServer \\ Website}"
-
-header-includes:
- - \usepackage{geometry}
- - \usepackage{soul}
- - \usepackage{xcolor}
- - \usepackage{ragged2e}
- - \usepackage{tikz}
- - \usepackage{fontawesome}
- - \usepackage{graphicx}
- - \usepackage{titling}
- - \setlength{\droptitle}{-2em}  
- - \geometry{margin = 0.2in}
-output: 
+address: 9 Bernard Road, Brighton, BN2 3ER
+aboutsection: Recent BSc Psychology with Economics graduate with a strong background
+  in data analysis, statistics and scientific methodology gained from educational
+  and work experiences. I am skilled in using R (programming language) to conduct
+  a variety of analytical techniques. I am passionate to utilise the skills I have
+  developed to provide valuable insights into important questions. \textbf{Currently
+  seeking to gain experience in data analysis or data science roles.}
+output:
   pdf_document:
     latex_engine: xelatex
+github: \href{https://github.com/CharlieHomewood}{\faGithub \ Github}
+linkedin: \href{https://www.linkedin.com/in/charliehomewood/}{\faLinkedin \ Linkedin}
+mobile: 07307233382
+skills: \flushright R (Proficient) \\ Python (Basic) \\ SQL (Basic)
+website: \href{https://charliehomewood.github.io/website/}{\faServer \ Website}
+header-includes:
+- \usepackage{geometry}
+- \usepackage{soul}
+- \usepackage{xcolor}
+- \usepackage{ragged2e}
+- \usepackage{tikz}
+- \usepackage{fontawesome}
+- \usepackage{graphicx}
+- \usepackage{titling}
+- "\\setlength{\\droptitle}{-2em}"
+- \geometry{margin = 0.2in}
+email: charliehomewood99@gmail.com
 linkcolor: blue
 ---
 
