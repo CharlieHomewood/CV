@@ -1,19 +1,15 @@
 ---
-title: "**\\vspace{-0.25cm} \\fontsize{42}{60}\\selectfont Charlie Homewood**"
+title: "**\\vspace{-0.25cm} \\fontsize{38}{60}\\selectfont Charlie Homewood**"
 address: 9 Bernard Road, Brighton, BN2 3ER
-aboutsection: Recent BSc Psychology with Economics graduate with a strong background
-  in data analysis, statistics and scientific methodology gained from educational
-  and work experiences. I am skilled in using R (programming language) to conduct
-  a variety of analytical techniques. I am passionate to utilise the skills I have
-  developed to provide valuable insights into important questions. \textbf{Currently
-  seeking to gain experience in data analysis or data science roles.}
+aboutsection: MSc Data Science student with strong academic and vocational experiences, utilising R and Python across a variety of analysis tasks. I love solving problems using statistical infererence and machine learning techniques, as well as communicating research insights to others to provide valuable decision-making evidence. I believe my skill set places me in a strong position to be a valuable addition to your data team. \textbf{I am currently seeking an exciting short-term experience as a data scientist (April-Sept 2025).}
+
 output:
   pdf_document:
     latex_engine: xelatex
 github: \href{https://github.com/CharlieHomewood}{\faGithub \ Github}
 linkedin: \href{https://www.linkedin.com/in/charliehomewood/}{\faLinkedin \ Linkedin}
 mobile: 07307233382
-skills: \flushright R (Proficient) \\ Python (Basic) \\ SQL (Basic)
+skills: \flushright \href{https://www.r-project.org/about.html}{\ul{R}} (Strong) \\ \href{https://www.python.org/about/}{\ul{Python}} (Intermediate) \\ Excel (Intermediate) \\ SQL (Basic) 
 website: \href{https://charliehomewood.github.io/website/}{\faServer \ Website}
 header-includes:
 - \usepackage{geometry}
@@ -37,7 +33,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 \begin{minipage}[c]{0.5\textwidth}
 \vspace{0.1cm}
-\hspace{0.5cm}
+\hspace{0.1cm}
 \begin{tikzpicture}
 \clip (0,0)  circle (2cm) ;
 \node[anchor=center] at (0,0) {\includegraphics[width=0.4\textwidth]{./img/me.jpg}};
@@ -58,7 +54,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 \begin{minipage}[t]{0.7\textwidth}
 \LARGE \textbf{Summary}
-\vspace{0.25cm}
+\vspace{0.1cm}
 \begin{flushleft} \large `r rmarkdown::metadata$aboutsection` \end{flushleft}
 \end{minipage}
 \begin{minipage}[t]{0.2\textwidth\hspace{1cm}}
@@ -66,9 +62,48 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 \large `r rmarkdown::metadata$skills`
 \end{minipage}
 
-\vspace{1cm}
+\vspace{0.1cm}
 \LARGE \textbf{------ \faUniversity \ Education ------}
-\vspace{0.25cm}
+\begin{minipage}[t]{0.3\textwidth}
+  \raggedleft \Large \textbf{MSc Data Science}\\
+  \vspace{0.1cm}
+  \raggedleft \large \textit{2024-2026}\\
+  \raggedleft \large \textit{University of Sussex}\\
+\end{minipage}
+\begin{minipage}[t]{1\textwidth\hspace{1cm}}
+  \Large \textbf{\textit{Relevant Modules}}
+  \begin{itemize}
+    \setlength\itemsep{0.1cm}
+    \large \item \textbf{Data Analysis Techniques (Overall Grade: 90\%)}
+      \begin{itemize}
+        \setlength\itemsep{0.1cm}
+        \large \item Mathematical background to core data analysis \\ techniques: treatment of errors, maximum-likelihood \\ estimation, least-squares fitting, Monte Carlo (incl. Markov \\ Chain) techniques, gradient descent
+        \large \item \href{https://github.com/CharlieHomewood/DAT_Software_Exercise}{\textbf{\ul{Software exercise: Monte Carlo estimation, model \\ selection, and Markov Chain Monte Carlo \\ parameter recovery}}} \textbf{(Grade: 88\%, written in Python)}
+      \end{itemize}
+    \large \item \textbf{Data Science Research Methods (Overall Grade: 74\%)} 
+      \begin{itemize}
+        \setlength\itemsep{0.1cm}
+        \large \item Data cleaning/wrangling, exploratory data analysis, \\ supervised/unsupervised learning methods \& dimensionality \\ reduction
+        \large \item \href{https://github.com/CharlieHomewood/DSRM_A1_report}{\textbf{\ul{Analysis of the Open University Learning Analytics \\ Dataset (OULAD)}}} \textbf{(Grade: 73\%, written in Python)}
+        \large \item \href{https://github.com/CharlieHomewood/DSRM_week8_report}{\textbf{\ul{Analysis of IMDB dataset to recommend genre, \\ director, lead actor for SussexBudgetProductions \\ (fictional company) next movie}}} \textbf{(Grade: 64\% [incl. \\ -10\% for exceeding word count], written in Python)}
+        \begin{itemize}
+          \setlength\itemsep{0.1cm}
+          \large \item Findings presented in 5 minute video presentation \\ \textbf{(Grade: 97\%)}
+        \end{itemize}
+      \end{itemize}
+      \large \item \textbf{Monte Carlo Simulations (Overall Grade: TBA)} 
+      \begin{itemize}
+        \setlength\itemsep{0.1cm}
+        \large \item Mathematical background to RNG, rejection/inversion \\ methods, variance reduction \& Markov Chain Monte Carlo
+      \end{itemize}
+      \large \item \textbf{Wider Topics in Data Science (Overall Grade: TBA)} 
+      \begin{itemize}
+        \setlength\itemsep{0.1cm}
+        \large \item Essay Title: \textit{Detecting Misinformation On Social Media \\ Using Neural Networks}
+      \end{itemize}
+  \end{itemize}
+\end{minipage}
+
 \begin{minipage}[t]{0.3\textwidth}
   \raggedleft \Large \textbf{BSc Psychology with Economics}\\
   \vspace{0.1cm}
@@ -77,44 +112,59 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
   \raggedleft \large \textit{\textbf{Grade: 1st class (Hons)}}\\
 \end{minipage}
 \begin{minipage}[t]{1\textwidth\hspace{1cm}}
-  \Large \textbf{\textit{Relevant Modules}}\\
-  \vspace{-0.4cm}
+  \Large \textbf{\textit{Relevant Modules}}
   \begin{itemize}
+    \setlength\itemsep{0cm}
     \large \item \textbf{Research Dissertation} 
       \begin{itemize}
+        \setlength\itemsep{0cm}
         \large \item \href{https://psyarxiv.com/6d5nq/}{\textbf{\ul{Conducted computational reproductions of \\ analyses published in peer-reviewed journal articles.}}}
       \end{itemize}
-    \vspace{0.2cm}
     \large \item \textbf{Quantitative and Qualitative Methods}
       \begin{itemize}
-        \large \item \href{https://github.com/CharlieHomewood/QQM-EFA}{\textbf{\ul{Conducted an exploratory factor analysis on \\ questionnaire data I collected.}}}
-      \end{itemize}
-    \vspace{0.2cm}
-    \large \item \textbf{Perspectives in Psychology}
-      \begin{itemize}
-        \item Developed a solid understanding of broader scientific \\ issues such as replication/reproducibility, research ethics \\ and philosophy of science.
-      \end{itemize}
-    \vspace{0.2cm}
-    \large \item \textbf{Behavioural Economics}
-      \begin{itemize}
-        \item Developed a strong understanding of cognitive biases in \\ real-world economic behaviour.
+        \setlength\itemsep{0.2cm}
+        \large \item \href{https://github.com/CharlieHomewood/QQM-EFA}{\textbf{\ul{Conducted an exploratory factor analysis on \\ data from a self-esteem questionnaire I produced.}}}
+        \large \item \href{https://github.com/CharlieHomewood/DS-Secondary_data_analysis}{\textbf{\ul{Compared linear regression models via ANOVA to \\ test hypotheses on parent-child emotional \\ expression.}}}
       \end{itemize}
   \end{itemize}
   \vspace{0.25cm}
   \Large \textbf{\textit{Awards}}\\
   \vspace{-0.4cm}
   \begin{itemize}
+    \setlength\itemsep{0cm} 
     \large \item The Sage Publications Prize for Outstanding Application of \\ Statistical Methods (2023).
       \begin{itemize}
+        \setlength\itemsep{0cm}
+        \large \item \textit{I received this award for my research dissertation project.}
+      \end{itemize}
+      \begin{itemize}
+        \setlength\itemsep{0cm}
         \large \item \textit{"To be awarded for the highest mark for a project that a \\ supervisor has nominated based on outstanding application \\ of statistical methods."}
       \end{itemize}
   \end{itemize}
 \end{minipage}
 
-\newpage
-\
-\LARGE \textbf{------ \faLightbulbO \ Work Experience ------}
+\vspace{0.2cm}
+\LARGE \textbf{------ \faLightbulbO \ Relevant Work Experience ------}
 \vspace{0.25cm}
+\begin{minipage}[t]{0.3\textwidth}
+  \raggedleft \Large \textbf{\href{https://atenpm.co.uk/}{\ul{Aten Consult}}}\\
+  \vspace{0.1cm}
+  \raggedleft \large \textit{\textbf{Data Analyst}}\\
+  \raggedleft \large \textit{May 2024 - Sept 2024}\\
+\end{minipage}
+\begin{minipage}[t]{1\textwidth\hspace{1cm}}
+  \Large \textbf{\textit{Responsibilities}}\\
+  \vspace{-0.525cm}
+  \begin{itemize}
+    \large \item \textbf{Used SQL and consulted with council departments} to \\ develop my team's understanding of various datasets, informing \\ the production of a bespoke building safety management app \\ to enhance compliance with the \href{https://buildingsafety.campaign.gov.uk/building-safety-regulator-making-buildings-safer/building-safety-regulator-news/understanding-the-golden-thread/}{\ul{the "Golden Thread" \\ recommendation}} from The Building Safety Act (2022).
+    \large \item \textbf{Used R to pre-process and clean} a large resident contact \\ details data extract, enabling Camden's resident engagement \\ team to gain greater outreach to residents.
+  \end{itemize}
+\end{minipage}
+
+\vspace{0.2cm}
+\LARGE \textbf{------ \faPencilSquareO \ Internships ------}
+\vspace{0.5cm}
 \begin{minipage}[t]{0.3\textwidth}
   \raggedleft \Large \textbf{\href{https://datacove.co.uk/}{\ul{Datacove}}}\\
   \vspace{0.1cm}
@@ -134,12 +184,12 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
   \end{itemize}
 \end{minipage}
 
-\vspace{1cm}
+\vspace{0.5cm}
 \begin{minipage}[t]{0.3\textwidth}
   \raggedleft \Large \textbf{\href{https://themindlab.co.uk/}{\ul{Mindlab}}}\\
   \vspace{0.1cm}
   \raggedleft \large \textit{\textbf{Project Manager (Intern)}}\\
-  \raggedleft \large \textit{July-September 2023}\\
+  \raggedleft \large \textit{June-July 2022}\\
 \end{minipage}
 \begin{minipage}[t]{1\textwidth\hspace{1cm}}
   \Large \textbf{\textit{Achievements}}\\
@@ -150,55 +200,26 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
     \vspace{0.2cm}
     \large \item \textbf{\href{https://themindlab.co.uk/case-study/finding-the-ideal-customer/}{\ul{Produced a summary report}}} of a project that developed \\ a segmentation method to gain insight into consumer \\ characteristics. 
     \vspace{0.2cm}
-    \large \item Helped Mindlab to \textbf{explore the viability of incorporating \\ 'Social Listening'} into Mindlab's series of measurement tools. \\ \href{https://themindlab.co.uk/how/social-listening/}{\ul{This tool is now part of Mindlab's commerical portfolio.}}
+    \large \item Helped Mindlab to \textbf{explore the viability of incorporating \\ 'Social Listening'} into Mindlab's series of measurement tools. \\ This tool subsequently became part of Mindlab's commercial \\ portfolio.
   \end{itemize}
 \end{minipage}
 
-\vspace{1cm}
+\vspace{0.2cm}
+\LARGE \textbf{------ \faPaintBrush \ Personal Projects ------}
+\vspace{0.5cm}
 \begin{minipage}[t]{0.3\textwidth}
-  \raggedleft \Large \textbf{University of Sussex Library}\\
+  \raggedleft \Large \textbf{\href{https://github.com/CharlieHomewood/making-percentile-radars}{\ul{Making Percentile Radars}}}\\
   \vspace{0.1cm}
-  \raggedleft \large \textit{\textbf{Library Cleaner}}\\
-  \raggedleft \large \textit{June-July 2018, June-July 2019, June-July 2021}\\
+  \raggedleft \large \textit{January 2023}
 \end{minipage}
 \begin{minipage}[t]{1\textwidth\hspace{1cm}}
-  \Large \textbf{\textit{Responsibilities}}\\
+  \Large \textbf{\textit{Description}}\\
   \vspace{-0.625cm}
   \begin{itemize}
     \vspace{0.2cm}
-    \large \item Cleaned books, bookshelves and equipment, sorted books, \\ disposed of outdated items.
-    \vspace{0.2cm}
-    \large \item Worked both independently and in small teams to consistently \\ meet daily targets.
+    \large \item \textbf{Developed an R Shiny dashboard} to display live statistics \\ for male football players, using data scraped from \href{https://fbref.com/en/}{\ul{fbref}}
   \end{itemize}
 \end{minipage}
-
-\vspace{1cm}
-\LARGE \textbf{------ \faCalendar \ Personal Projects ------}
-\vspace{0.25cm}
-\begin{minipage}[t]{0.3\textwidth}
-\raggedleft \Large \textbf{\href{https://charliehomewood.github.io/website/projects/project1}{\ul{Making Percentile Radars}}}\\
-\raggedleft \large \textit{Ongoing}\\
-\end{minipage}
-\begin{minipage}[t]{1\textwidth\hspace{1cm}}
-\large Using data from fbref, I'm creating an \href{https://github.com/CharlieHomewood/making-percentile-radars}{\textbf{\ul{analysis dashboard \\ using the Shiny package in R}}} to visualise the performance of \\ male footballers across Europe's top 5 highest ranked divisions.
-\end{minipage}
-
-\vspace{0.5cm}
-\begin{minipage}[t]{0.3\textwidth}
-\raggedleft \Large \href{https://charliehomewood.github.io/website/projects/project2}{\textbf{\ul{F1 Machine Learning}}}\\
-\raggedleft \large \textit{Ongoing}\\
-\end{minipage}
-\begin{minipage}[t]{1\textwidth\hspace{1cm}}
-\large Working with the \textbf{Ergast F1 API in Python}, I'm exploring the \\ impact of major regulation changes on the performance of drivers \\ and constructor teams between 1958 to now. 
-\end{minipage}
-
-
-
-
-
-
-
-
 
 
 
